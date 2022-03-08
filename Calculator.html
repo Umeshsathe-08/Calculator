@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project-2</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        background-color: #f3ecec;
+    }
+    input {
+        width: 65px;
+        height: 43px;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 14px;
+        margin: 1.5px;
+        background-color: rgb(134, 236, 236);
+        color: black;
+        border-width: 0px;
+    }
+    .first {
+        width: 270px;
+        height: 39px;
+        border-radius: 14px;
+        border-width: 0px;
+        background-color: cadetblue;
+    }
+    h1 {
+
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+    }
+
+    .second {
+        background-color: rgb(167, 212, 240);
+    }
+
+    .third {
+        background-color: rgb(226, 207, 182);
+    }
+
+    .fourth {
+        background-color: rgb(247, 184, 222);
+    }
+
+    .fifth {
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+        padding: 8px;
+        border-color: darkgray;
+        color: black;
+    }
+</style>
+<body>
+    <h1><span class="fifth">Calculator</span></h1>
+    <br>
+    <form action="backend.php" name="clc">
+        <div>
+            <input class=" first" type="text" value="" name="display">
+        </div>
+        <input class="btn" type="button" value="9" onclick="clc.display.value += '9' ">
+        <input class="btn" type="button" value="8" onclick="clc.display.value += '8' ">
+        <input class="btn" type="button" value="7" onclick="clc.display.value += '7' ">
+        <input class="second" type="button" value="+" onclick="clc.display.value+= '+' ">
+        <br>
+        <input class="btn" type="button" value="6" onclick="clc.display.value += '6' ">
+        <input class="btn" type="button" value="5" onclick="clc.display.value += '5' ">
+        <input class="btn" type="button" value="4" onclick="clc.display.value += '4' ">
+        <input class="second" type="button" value="-" onclick="clc.display.value += '-' ">
+        <br>
+        <input class="btn" type="button" value="3" onclick="clc.display.value +='3' ">
+        <input class="btn" type="button" value="2" onclick=" clc.display.value +='2' ">
+        <input class="btn" type="button" value="1" onclick="clc.display.value +='1' ">
+        <input class="second" type="button" value="*" onclick="clc.display.value +='*' ">
+        <br>
+        <input class="btn" type="button" value="0" onclick="clc.display.value +='0' ">
+        <input class="fourth" type="button" value="C" onclick="clc.display.value =' ' ">
+        <input class="third" type="button" value="=" onclick="clc.display.value =eval(clc.display.value)">
+        <input class="second" type="button" value="&#247;" onclick="clc.display.value +='/ ' ">
+    </form>
+</body>
+</html>
